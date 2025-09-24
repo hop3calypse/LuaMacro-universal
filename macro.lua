@@ -697,7 +697,7 @@ package.mpath = './?.m.lua'
 --- Make `require` use macro expansion.
 -- This is controlled by package.mpath, which is initially './?.m.lua'
 function M.set_package_loader()
-    -- inspired by https://github.com/bartbes/Meta/blob/master/meta.lua#L32,
+    -- directly inspired by https://github.com/bartbes/Meta/blob/master/meta.lua#L32,
     -- after a suggestion by Alexander Gladysh
     local loaders = package.loaders or package.searchers
     assert(type(loaders) == "table", "no loaders/searchers found in package")
